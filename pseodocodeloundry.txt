@@ -1,0 +1,44 @@
+Mulai
+Deklarasi:
+    nama[10] : string
+    jenis[10] : integer
+    berat[10] : real
+    total[10] : real
+    jumlahData : integer ← 0
+    lanjut : char
+
+Ulangi
+    Tampilkan judul aplikasi
+
+    Input nama[jumlahData]
+    Tampilkan pilihan layanan
+    Input jenis[jumlahData]
+    Input berat[jumlahData]
+
+    Jika jenis = 1 maka
+        total = berat × 5000
+    Jika tidak dan jenis = 2 maka
+        total = berat × 8000
+    Jika tidak
+        Tampilkan "Jenis layanan tidak valid"
+        total = 0
+    Endif
+
+    jumlahData ← jumlahData + 1
+
+    Input lanjut
+Selama lanjut = 'y' atau 'Y'
+
+Tampilkan judul daftar transaksi
+
+Untuk i = 0 sampai jumlahData - 1 lakukan
+    Tampilkan nama[i]
+    Jika jenis[i] = 1 maka
+        Tampilkan "Reguler"
+    Jika tidak
+        Tampilkan "Express"
+    Endif
+    Tampilkan berat[i] dan total[i]
+Selesai Untuk
+
+Selesai
